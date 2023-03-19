@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}| Ecom App</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+
+
+</head>
+<body>
+  <nav class="py-6 px-6 flex justify-between items-center border-b border-black">
+            <a href="{% url 'index' %}" class="text-xl font-semibold font-serif hover:text-red-500">Future Gadgets</a>
+
+            <div class="space-x-6">
+                <a href="#" class="text-lg font-semibold hover:text-gray-500">New Product</a>
+                <a href="#" class="text-lg font-semibold hover:text-gray-500">Browse</a>
+                <a href="{% url 'about' %}" class="text-lg font-semibold hover:text-gray-500">About</a>
+                <a href="{% url 'contact' %}" class="text-lg font-semibold hover:text-gray-500">Contact</a>
+
+                <a href="#" class="px-6 py-3 text-lg font-semibold bg-blue-500 text-white rounded-xl hover:bg-blue-700">Sign up</a>
+                <a href="#" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700">Log in</a>
+
+            </div>
+  </nav>
+
+  <div class="px-6 py-6">
+      {% block content %}
+      {% endblock %}
+  </div>
+    <footer class="py-6 px-6 flex justify-between bg-amber-100">
+        <div class="w-2/3 pr-10">
+            <h3 class="mb-5 font-semibold text-black">About</h3>
+            <p class="text-sm text-gray-500">"Discover the Future of Electronics at Future Gadgets! <br> Explore our
+                extensive range of cutting-edge gadgets,<br> from smartphones to drones and everything in between.
+                <br>Enjoy competitive prices, fast shipping, and exceptional <br>customer service.
+                Upgrade your tech game today and shop with us!"</p>
+        </div>
+        <ul class="space-y-2">
+            <li><a href="{% url 'about' %}" class="text-lg text-teal-500 hover:text-teal-700">About</a></li>
+            <li><a href="{% url 'contact' %}" class="text-lg text-teal-500 hover:text-teal-700">Contact</a></li>
+            <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Privacy policy</a></li>
+            <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Terms of use</a></li>
+        </ul>
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+{% extends 'pages/main.html' %}
+
+{% block title %} Contact {% endblock %}|
+
+{% block content %}
+    <div class="flex max-w-full max-h-full justify-center">
+        <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-cyan-300 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white">
+            <div class="flex flex-col space-y-0 justify-between">
+                <div>
+                    <h1 class="font-bold text-4xl text-black tracking-wide">Contact Us</h1>
+                    <p  class="pt-2 text-black text-sm">
+                        LoreOdit dolorem obcaecati recusandae hic tempore at,
+                        expedita fugiat dicta necessitatibus cumque iste enim
+                        quas non voluptate, qui temporibus quia rerum dolores?
+                    </p>
+
+                </div>
+                <div class="flex flex-col space-y-6 text-black text-xl">
+                    <div class="inline-flex space-x-2 items-center">
+                        <ion-icon name="call"></ion-icon>
+                        <span class="text-black">+(44) 7380507973</span>
+                    </div>
+                    <div class="inline-flex space-x-2 items-center">
+                        <ion-icon name="mail"></ion-icon>
+                        <span class="text-black">Future-gadgets10@gmail.com</span>
+                    </div>
+                    <div class="inline-flex space-x-2 items-center">
+                        <ion-icon name="location"></ion-icon>
+                        <span class="text-black">Wolverhampton, WV1 1LY</span>
+                    </div>
+                </div >
+                <div class="flex space-x-4 text-4xl text-black">
+                    <h1 class="font-semibold text-4xl ">Follow Us on:</h1> <br>
+                    <div class="">
+                            <a href="https://www.facebook.com/"
+                            ><ion-icon name="logo-facebook"></ion-icon
+                            ></a>
+                            <a href="https://www.twitter.com/"
+                            ><ion-icon name="logo-twitter"></ion-icon
+                            ></a>
+                            <a href="https://www.linkedin.com/"
+                            ><ion-icon name="logo-linkedin"></ion-icon
+                            ></a>
+                            <a href="https://www.instagram.com/"
+                            ><ion-icon name="logo-instagram"></ion-icon
+                            ></a>
+                    </div>
+                </div>
+            </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 text-gray-600 w-2/4">
+                    <form action="" class="flex flex-col space-y-4">
+                        <div>
+                            <label for="" class="text-sm">Your name:</label>
+                            <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                            />
+
+                        </div>
+                        <div>
+                            <label for="" class="text-sm">Email address:</label>
+                                <input
+                                type="email"
+                                placeholder="abc@mail.com"
+                                 class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                                />
+
+                            </div>
+                            <div>
+                                <label for="" class="text-sm">Message:</label>
+                                    <textarea
+                                    placeholder="Type Your Message"
+                                    rows="4"
+                                     class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                                    ></textarea>
+
+                            </div>
+                            <button
+                             class="inline-block self-end bg-green-600 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm"
+                                >
+                                Send Message
+                            </button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+{% endblock %}
