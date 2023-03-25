@@ -22,6 +22,10 @@ def about(request):
     return render(request, 'pages/about.html')
 
 
+def browse(request):
+    return render(request, 'pages/browse.html')
+
+
 def cart(request):
     context = {}
     return render(request, 'pages/cart.html', context)

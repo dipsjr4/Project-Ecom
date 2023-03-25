@@ -18,13 +18,14 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from Core.views import index, contact, about, cart, checkout
+from Core.views import index, contact, about, cart, checkout, browse
 
 urlpatterns = [
 
                   path('', index, name='index'),
                   path('contact/', contact, name='contact'),
                   path('about/', about, name='about'),
+                  path('browse/', browse, name='browse'),
                   path('admin/', admin.site.urls),
                   path('products/', include('products.urls')),
                   path('cart/', cart, name="cart"),
